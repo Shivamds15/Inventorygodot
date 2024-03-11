@@ -1,0 +1,143 @@
+[gd_scene load_steps=8 format=3 uid="uid://cxnyi5vk8afv5"]
+
+[ext_resource type="Script" path="res://Inventory.gd" id="1_5kmut"]
+[ext_resource type="PackedScene" uid="uid://br11de4fntuwq" path="res://slot.tscn" id="1_8mpr5"]
+[ext_resource type="Script" path="res://UI.gd" id="1_rjnss"]
+[ext_resource type="Script" path="res://Character.gd" id="2_3luss"]
+[ext_resource type="PackedScene" uid="uid://do7x0fgrx44oi" path="res://passive_slot.tscn" id="2_dcusw"]
+[ext_resource type="PackedScene" uid="uid://em2073be1sd" path="res://player.tscn" id="6_sbm12"]
+[ext_resource type="PackedScene" uid="uid://d35mpkk2ym8fn" path="res://abstract.tscn" id="7_dj3mg"]
+
+[node name="TestScene" type="Node2D"]
+
+[node name="UI" type="Control" parent="."]
+visible = false
+layout_mode = 3
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("1_rjnss")
+
+[node name="Inventory" type="GridContainer" parent="UI"]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 300.0
+offset_top = 90.0
+offset_right = 1072.0
+offset_bottom = 508.0
+grow_horizontal = 2
+grow_vertical = 2
+columns = 4
+script = ExtResource("1_5kmut")
+
+[node name="slot" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+layout_mode = 2
+
+[node name="slot2" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot3" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+layout_mode = 2
+
+[node name="slot4" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot5" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot6" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot7" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot8" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot9" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot10" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot11" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="slot12" parent="UI/Inventory" instance=ExtResource("1_8mpr5")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 2
+
+[node name="Character" type="Control" parent="UI"]
+anchors_preset = 0
+offset_right = 40.0
+offset_bottom = 40.0
+script = ExtResource("2_3luss")
+
+[node name="PassiveSlot" parent="UI/Character" instance=ExtResource("2_dcusw")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 41.0
+offset_right = 260.0
+offset_bottom = 191.0
+slot_type = 1
+
+[node name="PassiveSlot2" parent="UI/Character" instance=ExtResource("2_dcusw")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 0
+offset_left = 60.0
+offset_top = 438.0
+offset_right = 260.0
+offset_bottom = 588.0
+slot_type = 3
+
+[node name="PassiveSlot3" parent="UI/Character" instance=ExtResource("2_dcusw")]
+custom_minimum_size = Vector2(200, 150)
+layout_mode = 0
+offset_left = 59.0
+offset_top = 241.0
+offset_right = 259.0
+offset_bottom = 391.0
+slot_type = 2
+
+[node name="ATK" type="Label" parent="UI"]
+unique_name_in_owner = true
+layout_mode = 0
+offset_right = 40.0
+offset_bottom = 23.0
+
+[node name="player" parent="." instance=ExtResource("6_sbm12")]
+position = Vector2(639, 329)
+
+[node name="abstract" parent="." instance=ExtResource("7_dj3mg")]
+texture_filter = 4
+texture_repeat = 1
+position = Vector2(237, 109)
+
+[node name="abstract2" parent="." instance=ExtResource("7_dj3mg")]
+position = Vector2(235, 382)
+ID = "1"
+
+[node name="abstract3" parent="." instance=ExtResource("7_dj3mg")]
+position = Vector2(743, 152)
+ID = "2"
+
+[node name="abstract4" parent="." instance=ExtResource("7_dj3mg")]
+position = Vector2(989, 287)
+ID = "3"
+
+[node name="abstract5" parent="." instance=ExtResource("7_dj3mg")]
+position = Vector2(941, 497)
+ID = "4"

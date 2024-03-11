@@ -1,0 +1,15 @@
+[gd_scene load_steps=2 format=3 uid="uid://yvhtk7se2wpb"]
+
+[sub_resource type="PlaceholderTexture2D" id="PlaceholderTexture2D_71ofe"]
+size = Vector2(20, 20)
+
+[node name="bullet" type="Area2D"]
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+texture = SubResource("PlaceholderTexture2D_71ofe")
+
+[node name="ATK" type="Label" parent="."]
+offset_right = 40.0
+offset_bottom = 23.0
+theme_override_font_sizes/font_size = 10
+text = "0"

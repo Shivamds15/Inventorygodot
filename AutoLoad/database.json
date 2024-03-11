@@ -1,0 +1,62 @@
+{
+	"0" : {
+		"texture" : "keyg.png",
+		"slot_type" : 2,
+		"ATK" : 3
+	},
+	"1" : {
+		"texture" : "icongg.png",
+		"slot_type" : 1,
+		"ATK" : 2
+	},
+	"2" : {
+		"texture" : "ICONG.png",
+		"slot_type" : 3,
+		"ATK" : 1
+	},
+	"3" : {
+		"texture" :"hammer.png",
+		"slot_type" : 2,
+		"ATK" : 2
+	},
+	"4" : {
+		"texture" : "igear.png",
+		"slot_type" : 1,
+		"ATK" : 6
+	},
+	"5" : {
+		"texture" : "lighter.png",
+		"slot_type" : 3,
+		"ATK" : 6
+	},
+	"6" : {
+		"texture" : "ICONG.png",
+		"slot_type" : 1,
+		"ATK" : 2
+	},
+	"7" : {
+		"texture" : "torch.png",
+		"slot_type" : 1,
+		"ATK" : 3
+	},
+	"8" : {
+		"texture" : "screw.png",
+		"slot_type" : 2,
+		"ATK" : 7
+	},
+	"9" : {
+		"texture" : "ropebig.png",
+		"slot_type" : 2,
+		"ATK" : 2
+	},
+	"10" : {
+		"texture" : "keyb.png",
+		"slot_type" : 3,
+		"ATK" : 6
+	},
+	"11" : {
+		"texture" : "gun.png",
+		"slot_type" : 4,
+		"ATK" : 6
+	},
+}
